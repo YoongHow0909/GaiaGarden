@@ -1,0 +1,210 @@
+
+* {
+  margin: 0;
+
+}
+
+.plant_menu_sidebar {
+  width: 15%;
+  left: 0;
+  padding-top: 70px;
+  position: absolute;
+}
+
+button.side_menu_btn{
+  font-size: 22px;
+  color: #000000;
+  margin-left: 30px;
+  border: none;
+  background-color: white;
+  font-family: cursive;
+}
+
+
+.plant_menu_sidebar li {
+  padding: 12px;
+}
+
+
+.plant_list img {
+  width: 250px;
+  height: 250px;
+}
+
+.plant-container {
+  margin-left: 250px;
+  padding: 10px;
+}
+
+.plant-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.plant_list {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px;
+  margin: 15px;
+  cursor: pointer;
+  transition: transform .5s, -webkit-transform .5s;
+}
+.plant_list:hover {
+  transform: scale(1.05); /* Enlarge by 5% when hovered */
+}
+
+.plant_details {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.searchBar{
+
+margin-left: 280px;
+width: 70%;
+padding:10px;
+border-radius: 25px;
+border: #aaaaaa solid 2px;
+margin-top: 25px;
+}
+
+button.searchbtn{
+background: none;
+border: none;
+position: absolute;
+margin-left: -65px;
+margin-top: 13px;
+font-size: 20px;
+}
+
+/* Modal Content */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.741); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 70%;
+  height:75%;
+}
+
+div.right p{
+color: #000;
+margin-left:450px;
+position: relative;
+top: -320px;
+}
+
+span.modal-plant-name{
+  font-size: 30px;
+}
+span.modal-plant-price{
+  font-size: 25px;
+  color: rgb(255, 62, 62);
+}
+p.modal-plant-description{
+  font-size: 20px;
+}
+
+button.right_btn {
+  margin-left: 450px;
+  top: -280px;
+  position: relative;
+  padding: 15px;
+  border: 2px solid;
+  border-color:rgb(0, 249, 166) ;
+  width: 15%;
+  background-color: rgb(255, 255, 255);
+  font-size: 18px;
+  color: rgb(0, 249, 166);
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+button.left_btn {
+  margin-left: 60px;
+  top: -280px;
+  position: relative;
+  padding: 15px;
+  border: 2px solid;
+  border-color: rgb(253, 34, 34);
+  width: 15%;
+  background-color: rgb(255, 255, 255);
+  font-size: 18px;
+  color: rgb(253, 34, 34);
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+div.modal-content h2{
+  color: #000;
+    margin-left:550px;
+  }
+
+img.modal-plant-image{
+width:300px;
+height:300px;
+margin-left:50px;
+}
+
+div.left{
+  left:0;
+  position: relative;
+}
+/* Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.counter {
+  width: 150px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top:-320px;
+}
+.counter input {
+  width: 50px;
+  border: 0;
+  line-height: 30px;
+  font-size: 20px;
+  text-align: center;
+  background: #ffffff;
+  border: 1px solid;
+  border-color: #c6c3c3;
+  color: #000000;
+  appearance: none;
+  outline: 0;
+}
+.counter span {
+  display: block;
+  font-size: 25px;
+  padding: 0 10px;
+  cursor: pointer;
+  color: #000000;
+  user-select: none;
+}

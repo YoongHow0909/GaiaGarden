@@ -1,0 +1,80 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 19 Mar 2024, 9:19:56 pm
+    Author     : USER
+*/
+*{
+margin: 0;
+}
+
+p{
+    color: white;
+    font-family: cursive;
+}
+
+div.footer_page{
+    background-color: rgb(0, 0, 0);
+    padding-bottom: 40px;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    position: static;
+}
+
+.fa {
+  padding: 20px;
+  width: 15px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 10px;
+} 
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: rgb(255, 255, 255);
+  color: black;
+  border-radius:100%;
+  border:2px black;
+}
+
+.fa-twitter {
+  background: white;
+  color: black;
+  border-radius:100%;
+  border:2px black;
+}
+
+.fa-linkedin {
+  background: white;
+  color: black;
+  border-radius:100%;
+  border:2px black;
+}
+
+.fa-youtube {
+  background: white;
+  color: black;
+  border-radius:100%;
+  border:2px black;
+}
+
+.fa-instagram {
+  background: white;
+  color: black;
+  border-radius:100%;
+  border:2px black;
+}
+
+a{
+    color:white;
+    margin:1px 15px;
+        font-family: cursive;
+}
+
+

@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+    max-height: auto;
+}
+
+h1{
+
+    text-align: center;
+    font-size: 40px;
+    font-family: cursive;
+}
+
+article p{
+    padding: 50px;
+    color:black;
+    font-size: 20px;
+    width:55%;
+    margin-left:80px;
+}
+
+img.about_logo{
+    width:22%;    
+    margin-left:1060px;
+    top:240px;
+    position: absolute;
+    border-radius: 40px;
+}
+
+p.right_side_about_us{
+    padding:50px;
+    color:black;
+    font-size: 20px;
+    width:50%;
+    margin-left: 560px;
+
+}
+
+img.about_logo2{
+    width:30%;    
+    position: absolute;
+    border-radius: 40px;
+    top:660px;
+    margin-left:120px;
+}
+
+img.team_show{
+    width:24%;    
+    margin-left:1060px;
+    position: absolute;
+    border-radius: 40px;
+    top:950px;
+}

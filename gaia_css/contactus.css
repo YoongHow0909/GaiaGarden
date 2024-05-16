@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+    max-height: auto;
+}
+
+div.box_contactUs{
+        width: 500px;
+        height:500px;
+        border: 5px solid black;
+        padding: 50px;
+        margin-left: 8%;
+        margin-top: 100px;
+        margin-bottom: 50px;
+        background-color: black;
+        opacity: 0.5;
+        border-radius: 20px;
+}
+body{
+    background-image: url('image/contact.png');
+}
+h1{
+    color: white;
+    font-size: 35px;
+    font-family: cursive;
+}
+
+label{
+    color: white;
+    font-size: 20px;
+    font-family: cursive;
+}
+
+input.contact_info_cs{
+    padding:10px;
+    width: 65%;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+}
+
+
+::placeholder{
+    padding:5px;
+    font-size: 15px;
+}
+
+textarea#contact_textarea{
+    width:65%;
+    height:20%;
+    border: none;
+    border-radius: 5px;
+}
+
+input.submit_ct{
+color: black;
+width:55%;
+padding: 10px;
+border-radius: 5px;
+border: none;
+background-color: #7CE540;
+font-weight: bold;
+font-size: 15px;
+}
