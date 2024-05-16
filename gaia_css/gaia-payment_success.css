@@ -1,0 +1,36 @@
+h1, h2, h3, p{ margin: 0px; }
+a{ text-decoration: none; }
+div.pay-success{
+    border: 3px ridge black;
+    border-radius: 5px;
+    width: 600px;
+    margin: 100px auto auto auto;
+    padding: 10px;
+    overflow: auto;
+}
+p.payment-success{
+    font: bold 27px cursive; 
+    color: #55C12D;
+    text-align: center;
+}
+p.payment-failed{
+    font: bold 27px cursive; 
+    color: #F44336;
+    text-align: center;
+}
+button.view-order{
+    margin-left: 15px;
+}
+table.shipOrder, table.shipOrder th, table.shipOrder td{
+    font: bold 14px cursive;
+    margin: 10px auto auto 10px;
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 3px 5px;
+}
+td[name="plantCate"]::first-letter{
+    text-transform: uppercase;
+}
+td[name="orderQty"]{
+    text-align: right;
+}

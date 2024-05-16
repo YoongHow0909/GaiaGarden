@@ -1,5 +1,17 @@
 <?php
-include("helper.php");
+$dbhost = 'gaiagardendb.c524e08e8yjz.us-east-1.rds.amazonaws.com';
+$dbport = '3306';
+$dbname = 'gaiaDB';
+$username = 'nbuser';
+$password = '12345678';
+$charset = 'utf8' ;
+
+$conn = mysqli_connect($dbhost, $username, $password, $dbname, $dbport);
+
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+
 $startDate = isset($_GET['startDate']) && !empty($_GET['startDate']) ? $_GET['startDate'] : date("Y-m-d");
 $endDate = isset($_GET['endDate']) && !empty($_GET['endDate']) ? $_GET['endDate'] : date("Y-m-d");
 
@@ -51,12 +63,12 @@ $totalRevenue = $resultRevenue->fetch_assoc()['totalRevenue'];
 
 $response = [
     "topSalesData" => $topSalesData,
+    "recentSalesData" => $recentSalesData,
     "totalOrders" => $totalOrders,
-    "totalRevenue" => $totalRevenue,  
-    "recentSalesData" => $recentSalesData
+    "totalRevenue" => $totalRevenue
 ];
 
 echo json_encode($response);
 
 $conn->close();
-
+?>

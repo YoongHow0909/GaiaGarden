@@ -1,0 +1,140 @@
+body {
+  background-image: url('/homepage/plant.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* Darken the background image significantly */
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.login-container {
+  /* Center the form horizontally and vertically */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Add a background color and some padding for the container */
+  background-color: rgba(255, 255, 255, 0.8);  /* White with 80% opacity */
+  padding: 30px;
+  border-radius: 10px;  /* Add rounded corners */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);  /* Add a subtle shadow */
+  /* Increase font size and add a border for the form elements */
+  font-size: 16px;
+  border: 1px solid #ddd;
+}
+
+.login-container label {
+  display: block;  /* Make labels display on separate lines */
+  margin-bottom: 5px;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.login-container button[type="submit"] {
+  background-color: #4CAF50;  /* Green color for button */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-container a {
+  color: #333;  /* Darker color for links */
+  text-decoration: none;  /* Remove underline from links */
+}
+
+/* Style the login options section */
+.login-options {
+  margin-bottom: 20px; /* Add some space below the options */
+  margin-left: -20px;
+}
+
+.login-options a {
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.login-options a.active {
+  background-color: #06a02d;  /* Light gray for active option */
+  color:white;
+}
+
+/* Hide the staff login container initially */
+#staff-login {
+  display: none;
+}
+
+#register input[type=text],
+#register input[type=email],
+#register input[type=tel],
+#register input[type=password] {
+  width: 130%; /* Set width to 100% of its container */
+  padding: 10px; /* Add some padding for spacing */
+  box-sizing: border-box; /* Include padding in the width */
+  border: 1px solid #ccc; /* Add a border */
+  border-radius: 4px; /* Add rounded corners */
+}
+
+
+.error-message {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 5px;
+  display: none;
+}
+
+.r-container {
+  /* Center the form horizontally and vertically */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Add a background color and some padding for the container */
+  background-color: rgba(255, 255, 255, 0.8);  /* White with 80% opacity */
+  padding: 30px;
+  border-radius: 10px;  /* Add rounded corners */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);  /* Add a subtle shadow */
+  /* Increase font size and add a border for the form elements */
+  font-size: 16px;
+  border: 1px solid #ddd;
+  margin-top: 80px;
+}
+
+.r-container label {
+  display: block;  /* Make labels display on separate lines */
+  margin-bottom: 5px;
+}
+
+.r-container input[type="text"],
+.r-container input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.r-container button[type="submit"] {
+  background-color: #4CAF50;  /* Green color for button */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.r-container a {
+  color: #333;  /* Darker color for links */
+  text-decoration: none;  /* Remove underline from links */
+}

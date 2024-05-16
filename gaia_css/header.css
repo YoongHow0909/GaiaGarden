@@ -1,0 +1,70 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.logo {
+    width: 70px;
+    height: 70px;
+    margin-left:10px;
+    margin-top:10px;
+    border-radius:100px;
+}
+.title {
+    font-size: 20px;
+    font-weight:bold;
+    font-family: cursive;
+    padding-left: 13px;
+    float: left;
+    margin-top: 20px;
+    color: white;
+}
+header{
+    background-color:black;
+    padding: 10px 0px;
+}
+.head_design{
+    display: flex;
+}
+/*button css*/
+.btn_row{
+    margin: 30px 70px auto auto;
+}
+button.head_btn{
+    border: none;
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    font-family: cursive;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight:bold;
+    margin: 4px 35px;
+    cursor: pointer;
+}
+button.head_btn span {
+    cursor: pointer;
+    position: relative;
+    left: 0px;
+    visibility: hidden;
+    transition: 0.5s;
+}
+button.head_btn:hover span{
+    visibility: visible;
+    left: 5px;
+}
+button.Sign_in{
+    background-color: #EA4C89;
+    border-radius: 20px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: cursive;
+    font-size: 14px;
+    font-weight: bold;
+    height: 40px;
+    padding: 10px 20px;
+    text-align: center;
+}
+/*button css*/

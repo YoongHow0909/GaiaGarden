@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Statistics Report</title>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="gaia_css/style.css">
-    <?php include("header.php"); ?>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
@@ -35,6 +34,8 @@
             </div>
             <div id="recentSalesContent"></div>
         </div>
+        
+        <button onclick="location='AdminHome.php'">Back</button>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -42,5 +43,4 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="script.js"></script>
 </body>
-<footer><?php include("footer.php"); ?></footer>
 </html>

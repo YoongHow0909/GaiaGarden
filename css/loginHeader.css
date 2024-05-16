@@ -1,0 +1,98 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 18 Mar 2024, 11:55:51 am
+    Author     : USER
+*/
+*{
+padding: 0;
+margin: 0;
+}
+.logo {
+ width: 70px;
+ height: 70px;
+ margin-left:10px;
+ margin-top:10px;
+ border-radius:100px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight:bold;
+    font-family: cursive;
+    padding-left: 13px;
+    float: left;
+    margin-top:20px;
+    color:white;
+}
+header{
+    background-color:black;
+    padding-bottom: 20px;
+}
+.head_design{
+     display: flex;
+}
+
+
+/*button css*/
+button.head_btn{
+  border: none;
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  font-family: cursive;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight:bold;
+  margin: 4px 35px;
+  cursor: pointer;
+}
+.btn_row{
+    margin-left:25%;
+    margin-top:30px;
+}
+button.Sign_in{
+  background-color: #EA4C89;
+  border-radius: 20px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: cursive;
+  font-size: 14px;
+  font-weight: bold;
+  height: 40px;
+  padding: 10px 20px;
+  text-align: center;
+  
+}
+
+button.head_btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+button.head_btn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -5px;
+  transition: 0.5s;
+}
+
+button.head_btn:hover span {
+  padding-right: 20px;
+}
+
+button.head_btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/*button css*/
+

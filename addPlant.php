@@ -7,8 +7,10 @@ include('helper.php');
 <head>
     <meta charset="UTF-8">
     <title>Add Plant</title>
+    <link rel="stylesheet" href="gaia_css/Admin.css" />
+
     <?php  
-    include('header.php');  
+    include 'navigationAdmin.php';
   
 
     if(isset($_POST["submit"])){
@@ -52,46 +54,137 @@ alert('the plant add successfully');
     }
 
     ?>
+
+    <style>
+        .content {
+            background-color: #fff;
+            width: 800px;
+            border-radius: 10px;
+            font-size: 17px;
+            padding:20px;
+            margin:0 auto;
+        }
+
+        .inputBox {
+            margin: 15px 0;
+        }
+
+        .inputBox input ,.inputBox select,textarea {
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 8px; 
+            width: 100%; 
+            box-sizing: border-box;
+        }
+
+        .inputBox span {
+            margin-bottom: 5px;
+        }
+        
+        .button{
+            margin-top:10px;
+            margin-left: 10px;
+        }
+        
+        .form-columns {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .form-column {
+            width: calc(50% - 10px); /* Adjusted width for two columns */
+        }
+
+        /* Adjusted style for input and select */
+        .form-column .inputBox input,
+        .form-column .inputBox select {
+            width: calc(100% - 16px);
+        }          
+        
+    </style> 
+
 </head>
 <body>
-    <h1>Add plant php</h1><br>
-<form action="addPlant.php" method="POST" enctype="multipart/form-data">
-<label for="plant_id">Plant ID: </label>
-<input type="text" name="plant_id" required><br><br>
+    <div class="container">
+        <section class="main">
+            <div class="main-top">
+              <p>Admin Control Page</p>
+            </div>
+            <div class="main-body">
+                    <h1 style="text-align: center;">Add Plant</h1>  
+            </div>
+            
+            <div class="content">
+                <div class="form-columns">
+                    <div class="form-column">
+                <form action="addPlant.php" method="POST" enctype="multipart/form-data">
+                    <div class="inputBox">                    
+                    <label for="plant_id">Plant ID: </label>
+                    <input type="text" name="plant_id" required>
+                    </div>
+                    
+                    <div class="inputBox">                    
+                    <label for="plant_name">Plant Name: </label>
+                    <input type="text" name="plant_name" required>
+                    </div>
+                    
+                    
+                    <div class="inputBox">
+                    <label for="plant_img">Plant image: </label>
+                    <input type="file" name="plant_img" id="plant_img" required>
+                    </div>
+                    
+                    <div class="inputBox">                    
+                    <label for="plant_price">Plant price:</label>
+                    <input type="number" name="plant_price" required>
+                    </div>
+                    </div>
+                    
+                    <div class="form-column"> 
+                    <div class="inputBox">                        
+                    <label for="plant_cate">Plant category:</label>
+                    <select name="plant_cate" required>
+                        <option value="">Please select a option</option>
+                        <option value="climbers">climbers</option>
+                        <option value="creepers">creepers</option>
+                        <option value="flowering">flowering</option>
+                        <option value="herbs">herbs</option>
+                        <option value="shrubs">shrubs</option>
+                        <option value="trees">trees</option>
+                    </select>
+                    </div>
+                        
+                    <div class="inputBox">                    
+                    <label for="plant_avail">Plant available:</label>
+                    <input type="number" name="plant_avail" required>
+                    </div>
+                        
+                        
+                    <div class="inputBox">                    
+                    <label for="plant_desp">Plant description:</label>
+                    <textarea name="plant_desp"></textarea>
+                    </div>
+                    </div>
+                    </div> 
+                    <input type="submit" name="submit" class="btn">
+                    <input type="button" name="btnCancel" class="btn" value="Back" onclick="location='adminHome.php'">
 
-<label for="plant_name">Plant Name: </label>
-<input type="text" name="plant_name" required><br><br>
+                </form>                
+                
+            </div>
+  
+                        
+            
+        </section>
+        
+    </div>
+    
+    
 
-<label for="plant_img">Plant image: </label>
-<input type="file" name="plant_img" id="plant_img" required><br><br>
-
-<label for="plant_price">Plant price:</label>
-<input type="number" name="plant_price" required><br><br>
-
-<label for="plant_cate">Plant category:</label>
-<select name="plant_cate" required>
-    <option value="">Please select a option</option>
-    <option value="climbers">climbers</option>
-    <option value="creepers">creepers</option>
-    <option value="flowering">flowering</option>
-    <option value="herbs">herbs</option>
-    <option value="shrubs">shrubs</option>
-    <option value="trees">trees</option>
-</select><br><br>
-<label for="plant_avail">Plant available:</label>
-<input type="number" name="plant_avail" required><br><br>
-<label for="plant_desp">Plant description:</label>
-<textarea name="plant_desp"></textarea><br><br>
-<input type="submit" name="submit">
-</form>
 
 
 
 
 </body>
-<footer>
-<?php
-include('footer.php');
-?>
-</footer>
+
     </html>

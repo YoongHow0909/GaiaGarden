@@ -1,0 +1,219 @@
+p{ margin: 0px; }
+div.pay-bill{
+    width: 900px;
+    margin: 5px auto;
+    border: 3px ridge black;
+    border-radius: 5px;
+    overflow: auto;
+}
+/*Customer Details*/
+div.cust-detail{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+p.cust-detailLbl{
+    margin: 0px;
+    margin-right: 5px;
+}
+p.cust-address{
+    margin: 0px;
+    margin-right: 5px;
+}
+img.editBtn{
+    margin: 3px;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #0086D0;
+}
+hr.divider-hr{
+    width: 98%; 
+    margin: 0 auto;
+}
+/*Items to pay*/
+div.checkout-item{
+    display: flex;
+    position: relative;
+}
+img.item-img{
+    margin: 10px;
+    margin-top: 7px;
+    border-radius: 5px;
+    height: 120px;
+    width: 90px;
+}
+div.item-desc{
+    display: flex;
+    flex-direction: column;
+}
+.item-detail{
+    margin: 1px;
+}
+div.delivery-opt{
+    display: flex;
+    margin: 0px;
+    margin-top: 10px;
+}
+div.devry-opt{
+    margin: 0px;
+    margin-left: 10px;
+    display: flex;
+    align-items: flex-start;
+}
+div.devry-opt > input{
+    margin-left: 20px;
+}
+p.devry-info{
+    margin: 0px;
+    margin-top: 2px;
+    font-size:13px;
+}
+p.item-amt{
+    margin: 50px 10px auto auto;
+}
+p.item-price{
+    text-align: right;
+    margin: 0px 10px 1px 0px;
+}
+/*Payment Options*/
+div.cust-detail{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+p.cust-detailLbl{
+    margin: 0px;
+    margin-right: 5px;
+}
+p.cust-address{
+    margin: 0px;
+    margin-right: 5px;
+}
+img.editBtn{
+    margin: 3px;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #0086D0;
+}
+hr.divider-hr{
+    width: 98%; 
+    margin: 0 auto;
+}
+/*Items to pay*/
+div.checkout-item{
+    display: flex;
+    position: relative;
+}
+img.item-img{
+    margin: 10px;
+    margin-top: 7px;
+    border-radius: 5px;
+    height: 120px;
+    width: 90px;
+}
+div.item-desc{
+    display: flex;
+    flex-direction: column;
+}
+.item-detail{
+    margin: 1px;
+}
+div.delivery-opt{
+    display: flex;
+    margin: 0px;
+    margin-top: 10px;
+}
+div.devry-opt{
+    margin: 0px;
+    margin-left: 10px;
+    display: flex;
+    align-items: flex-start;
+}
+div.devry-opt > input{
+    margin-left: 20px;
+}
+p.devry-info{
+    margin: 0px;
+    margin-top: 2px;
+    font-size:13px;
+}
+p.item-amt{
+    margin: 50px 10px auto auto;
+}
+p.item-price{
+    text-align: right;
+    margin: 0px 10px 1px 0px;
+}
+/*Payment Options*/
+div.pay-metd{
+    display: flex;
+}
+p.errormsg{ color: red; }
+p[name="pay-metd-err"]{
+  margin-left: 20px;  
+}
+img.pay-type{
+    width: auto;
+    height: 50px;
+    margin: 5px;
+}
+div.selected{
+    display: inline-block;
+    margin: 0px 15px 10px;
+    border-radius: 5px;
+    border: 3px outset #95E30F;
+}
+div.cash, div.card, div.touchngo{
+    display: none;
+    margin-left: 125px;
+}
+/*div.card > label, input{
+    margin-top: 10px;
+}*/
+div[name="visa"], div[name="master"]{
+    margin-bottom: 0px;
+}
+div.card > p{
+    display: inline;
+    margin-bottom: 5px;
+}
+p[name="payCardErr"]{
+    margin-left: 104px;
+}
+p[name="cardTypeErr"]{
+    margin-left: 98px;
+}
+p[name="cardNumErr"]{
+    margin-left: 97px;
+}
+p[name="cardCVVErr"]{
+    margin-left: 105px;
+}
+p[name="cardExpErr"]{
+    margin-left: 395px;
+}
+label.cardType, input.cardType{
+    vertical-align: top;
+}
+img.cardType{
+    width: auto;
+    height: 40px;
+    margin: 5px;
+}
+label.cardExp{
+    margin-left: 310px;
+}
+img.qrcode{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: 150px;
+}
+input.pay-btn{
+    width: 100%; height: 30px;
+}

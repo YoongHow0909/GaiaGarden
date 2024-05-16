@@ -16,9 +16,7 @@ div.box_contactUs{
         opacity: 0.5;
         border-radius: 20px;
 }
-body{
-    background-image: url('image/contact.png');
-}
+
 h1{
     color: white;
     font-size: 35px;

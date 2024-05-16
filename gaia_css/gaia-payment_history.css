@@ -1,0 +1,27 @@
+div.payment-history{
+    border: 3px solid black;
+    width: 900px;
+    margin: 100px auto;
+    padding: 30px;
+    border-radius: 8px;
+}
+h2.payment_history{ 
+    margin: 10px auto 20px auto; 
+}
+table.pay-history, table.pay-history th, table.pay-history td{
+    border-collapse: collapse;
+    border: 2px ridge black;
+    font-family: cursive;
+    padding: 3px 15px;
+}
+td[name="plantCate"]::first-letter{
+    text-transform: uppercase;
+}
+td[name="orderQty"], td[name="paymentMethod"]{
+    text-align: center;
+}
+p.errormsg{
+    color: red;
+    font-size: 15px;
+    margin-top: 10px;
+}
